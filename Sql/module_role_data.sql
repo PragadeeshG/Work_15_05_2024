@@ -1,0 +1,16 @@
+create table if not exists module_role_data(
+modulerole_id Integer not null,
+description varchar(255) null,
+authorizer_table_name varchar(255) null,
+effective_start_date varchar(255) null,
+effective_end_date varchar(255) null,
+object_mapped char null,
+data_auth_provided char null,
+user_role_mapped char null,
+action_types varchar(255) null,
+valid_auth varchar(255) null,
+process_count Integer null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint module_role_data_pk primary key(modulerole_id));
